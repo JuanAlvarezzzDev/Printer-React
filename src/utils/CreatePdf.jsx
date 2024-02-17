@@ -9,8 +9,8 @@ const CreatePdf = async (props, output = "print") => {
     try {
       const {
         pageSize = {
-          width: 226.77,
-          height: 841.88,
+          width: 226.77, // Medida por Puntos
+          height: 740.88,
         },
         pageMargins = [5.66, 5.66, 5.66, 5.66],
         info = {
@@ -27,23 +27,22 @@ const CreatePdf = async (props, output = "print") => {
           },
           tHeaderLabel: {
             fontSize: 8,
-            alignment: "right",
           },
           tHeaderValue: {
             fontSize: 8,
             bold: true,
+            
           },
           tProductsHeader: {
-            fontSize: 8.5,
+            fontSize: 8,
             bold: true,
           },
           tProductsBody: {
-            fontSize: 8,
+            fontSize: 9,
           },
           tTotals: {
-            fontSize: 9,
+            fontSize: 10,
             bold: true,
-            alignment: "right",
           },
           tClientLabel: {
             fontSize: 8,
